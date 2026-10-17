@@ -20,4 +20,4 @@ Requirements:
 8. Do not deploy anything.
 9. Report verified versus unverified results separately.
 
-Before editing, inspect the actual repository and identify the HTML entry point. If the original HTML is missing from the repo, report that clearly rather than fabricating a replacement. The original source was pasted in the ChatGPT conversation and still needs to be captured into this repository as the baseline file.
+Before editing, inspect the actual repository and identify the HTML entry point. `index.html` is the original playable baseline; preserve it and implement the integration as a small, reviewable change. Do not fabricate a replacement or rewrite the game.
