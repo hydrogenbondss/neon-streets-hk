@@ -14,7 +14,7 @@ The initial prototype was supplied as a single HTML file using Three.js 0.160.0 
 - Health, HUD and minimap
 - Procedurally generated city blocks, neon signs, civilian vehicles and pedestrians
 
-The source HTML still needs to be committed as the first gameplay baseline. Until then, the original code pasted in the ChatGPT conversation remains the reference baseline.
+The original single-file prototype is committed at `index.html` as the baseline. It is intentionally preserved before GLB integration.
 
 ## Environment work
 
