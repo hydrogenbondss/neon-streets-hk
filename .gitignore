@@ -1,0 +1,12 @@
+# Local development
+.DS_Store
+.vscode/
+.idea/
+node_modules/
+dist/
+build/
+
+# Local exported 3D assets (add intentionally once reviewed)
+assets/*.blend1
+assets/*.blend2
+*.log
