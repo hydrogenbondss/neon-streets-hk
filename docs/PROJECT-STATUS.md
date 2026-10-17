@@ -18,7 +18,7 @@
 
 ## Not yet verified
 
-- The original game HTML has not been committed to this repository.
+- The original game HTML baseline is committed as `index.html`.
 - The GLB is not committed to the repository yet.
 - The GLB has not been loaded into the original game.
 - No combined browser playtest has verified driving, collisions, deliveries, wanted level, police or performance.
@@ -26,10 +26,9 @@
 
 ## Resume order
 
-1. Add the exact original HTML as `index.html` (do not reconstruct from memory if the original is available).
-2. Export/download the latest GLB and place it at `assets/hk-kowloon-street.glb`.
-3. Integrate the GLB loader into the existing module.
-4. Run the game over HTTP and verify console output, asset loading, movement, collisions and gameplay loop.
-5. Fix any verified defects, then review one more time before considering expansion.
+1. Export/download the latest GLB and place it at `assets/hk-kowloon-street.glb`.
+2. Integrate the GLB loader into `index.html` on a separate, reviewable change.
+3. Run the game over HTTP and verify console output, asset loading, movement, collisions and gameplay loop.
+4. Fix any verified defects, then review one more time before considering expansion.
 
 This is a parked work-in-progress. Do not deploy without explicit approval.
