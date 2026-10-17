@@ -1,0 +1,23 @@
+Continue Neon Streets HK from the original single-file Three.js prototype.
+
+Do not rewrite the game from scratch or remove working gameplay.
+
+Goal: integrate the Higgsfield GLB environment into the existing Three.js game as the first Kowloon street, keeping keyboard movement, driving, enter/exit car, money, delivery markers, police, wanted level, minimap and HUD.
+
+Higgsfield 3D Jutsu project:
+https://higgsfield.ai/3d-jutsu/5a037714-3249-4aae-ae31-17075ee48cf4
+
+Export/download the latest GLB to assets/hk-kowloon-street.glb. Read docs/INTEGRATION-GUIDE.md and apply src/hk-street-integration-snippet.js to the existing module, not as a standalone script, because it references lexical variables already in that module.
+
+Requirements:
+1. Add the three/addons import-map prefix for the existing Three.js 0.160.0 CDN and import GLTFLoader.
+2. Preserve the procedural city as fallback, hiding procedural buildings that overlap the imported street only after the GLB loads successfully.
+3. Add collision rectangles for imported building masses so the player cannot walk through those buildings.
+4. Avoid unnecessary render cost; use InstancedMesh for repeated static assets where safe, leaving taxi/pedestrian parts separate for later gameplay integration.
+5. Ensure the imported street aligns with the global ground plane without floating or z-fighting.
+6. Fix syntax/runtime errors introduced by integration. Do not claim success unless the game is started and you confirm the GLB loads, movement works and there are no fatal console errors.
+7. Make small changes, preserve a diff, and test after integration.
+8. Do not deploy anything.
+9. Report verified versus unverified results separately.
+
+Before editing, inspect the actual repository and identify the HTML entry point. If the original HTML is missing from the repo, report that clearly rather than fabricating a replacement. The original source was pasted in the ChatGPT conversation and still needs to be captured into this repository as the baseline file.
